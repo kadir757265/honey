@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин за Мед и Пчелни Продукти</title>
+    <link rel = "icon" href ="" type = "image/x-icon">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="description" content="Открийте най-висококачествения мед и продукти от пчели.">
+
+    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/Bee%20animation.css">
+    <link rel="stylesheet" href="Style/Home.css">
+    <link rel="stylesheet" href="Style/All.css">
+    <link rel="stylesheet" href="Style/Carousel.css">
+    <link rel="stylesheet" href="Style/Theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-white">
+<header>
+    <div id="menu-jk" class="nav-part shadow-md bg-white navcol">
+        <div class="container-lg">
+            <div class="row  p-2">
+                <div class="col-lg-4 p-2">
+                    <img class="max-230" src="Image/logo.png" alt="logo">
+                    <a  data-bs-toggle="collapse" data-bs-target="#menu" class="float-end d-lg-none pt-1 ps-3"><i class="bi pt-1 fs-1 cp bi-list"></i></a>
+                </div>
+                <div id="menu" class="col-lg-8 d-none d-lg-block">
+                    <ul class="fw-bold float-end nacul fs-7">
+                        <li class="float-start p-3 px-4"><a href="index.html">Начало</a></li>
+                        <li class="float-start p-3 px-4"><a href="About%20us.html">За нас</a></li>
+                        <li class="float-start p-3 px-4"><a href="Product.html">Продукти</a></li>
+                        <li class="float-start p-3 px-4"><a href="Blog.html">Блог</a></li>
+                        <li class="float-start p-3 px-4"><a href="Contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<style>
+    .home-image-bee {
+        width: 60%;
+        height: auto;
+        position: relative;
+        top: 40px;
+        left: 140px;
+        transform: scaleX(-1);
+    }
+    .scene {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    .carousel-caption {
+        z-index: 3;
+    }
+@media (max-width: 768px) {
+  .w-100 {
+      height: 280px;!important;
+  }
+}
+
+</style>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+        <button onclick="currentSlide(0)" type="button" data-bs-target="#carouselExampleIndicators"  class="navigation-dot" aria-current="true" aria-label="Slide 1"></button>
+        <button onclick="currentSlide(1)" type="button" data-bs-target="#carouselExampleIndicators"  class="navigation-dot"  ></button>
+        <button onclick="currentSlide(2)" type="button" data-bs-target="#carouselExampleIndicators"  class="navigation-dot"  ></button>
+        <button onclick="currentSlide(3)" type="button" data-bs-target="#carouselExampleIndicators"  class="navigation-dot"  ></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Image/home-page-img.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption   d-md-block">
+                <div class="row">
+                    <div class="col-lg-6 text-start ">
+                        <h1 class="fs-12 fw-bolder text-start ">Honey house<br><span class="text-primary">онлайн магазин</span> </h1>
+                        <p class="text-dark d-none d-md-block text-start">Съществуват много различни разновидности на цветен мед, а при нас можете да откриете част от възможното разнообразие </p>
+                        <div class="d-inline-block pt-5 text-start d-none d-lg-block">
+                            <button class="btn btn-primary shadow fs-5 fw-bolder px-5 py-2">Купи веднага</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img class="home-image-bee" src="Image/bee-home.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="bee">
+                <div class="wing_right wing"></div>
+                <div class="wing_left wing"></div>
+                <div class="antenna_right antenna"></div>
+                <div class="antenna_left antenna"></div>
+                <div class="bee_face front"></div>
+                <div class="bee_face back"></div>
+                <div class="bee_face right"></div>
+                <div class="bee_face left"></div>
+                <div class="bee_face top"></div>
+                <div class="bee_face bottom"></div>
+                <div class="leg_right leg_right_one leg"></div>
+                <div class="leg_right leg_right_two leg"></div>
+                <div class="leg_right leg_right_three leg"></div>
+                <div class="leg_left leg_left_one leg"></div>
+                <div class="leg_left leg_left_two leg"></div>
+                <div class="leg_left leg_left_three leg"></div>
+                <div class="stinger"></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/home-2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="fs-12 fw-bolder text-start">Honey House<br><span class="text-primary">онлайн магазин</span> </h1>
+                        <p class="d-none d-md-block text-dark text-start">За любителите на автентичното, предлагаме и пчелен мед, направо от нашите кошери, при нас има за всеки по нещо</p>
+                        <div class="d-inline-block pt-5 text-start d-none d-lg-block">
+                            <button class="btn btn-primary shadow fs-5 fw-bolder px-5 py-2">Купи веднага</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img class="home-image-bee" src="Image/bee%20(1).png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/home-3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="fs-12 fw-bolder text-start">Honey House<br><span class="text-primary">онлайн магазин</span> </h1>
+                        <p class="d-none d-md-block text-dark text-start">За любителите на автентичното, предлагаме и пчелен мед, направо от нашите кошери, при нас има за всеки по нещо</p>
+                        <div class="d-inline-block pt-5 text-start d-none d-lg-block">
+                            <button class="btn btn-primary shadow fs-5 fw-bolder px-5 py-2">Купи веднага</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img  class="home-image-bee" src="Image/bee%20(2).png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/home-4.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="fs-12 fw-bolder text-start">Honey House<br><span class="text-primary">онлайн магазин</span> </h1>
+                        <p class="d-none d-md-block text-dark text-start">За любителите на автентичното, предлагаме и пчелен мед, направо от нашите кошери, при нас има за всеки по нещо</p>
+                        <div class="d-inline-block pt-5 text-start d-none d-lg-block">
+                            <button class="btn btn-primary shadow fs-5 fw-bolder px-5 py-2">Купи веднага</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img class="home-image-bee" src="Image/smiling.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prev-next">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span onclick="plusSlides(-1)" class="carousel-control-prev-icon" aria-hidden="true"><i class="bi fs-4 text-dark bi-chevron-left"></i></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span onclick="plusSlides(1)"  class="carousel-control-next-icon" aria-hidden="true"><i class="bi fs-4 text-dark bi-chevron-right"></i></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+
+
+<div class="container-fluid products big-padding pt-3">
+    <div class="container-xl">
+        <div class="section-title row">
+            <h2 class="fs-1 fw-bold">Защо да изберете нас?</h2>
+            <p>Ние сме най-добрия дистрибутор на пчелни продукти в България, изберете нас и се насладете на качеството</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 mb-4 col-md-6">
+                <div class="cover text-center">
+                    <img class="w-125" src="Image/bees.png" alt="">
+                    <h2 class="fs-3 fw-bolder mt-4">Органичен мед</h2>
+                    <p>Медът, които ние предлагаме е напълно органичен, без подсладители и вредни химически вещества, идващ направо от нашите кошери. </p>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4 col-md-6">
+                <div class="cover text-center">
+                    <img class="w-125" src="Image/bee.png" alt="">
+                    <h2 class="fs-3 fw-bolder mt-4">Майката пчела</h2>
+                    <p>Майката пчела, известна и като кралица, е сърцето на пчелната кошница, ръководейки усилената работа на хиляди трудолюбиви пчели, и поддържайки баланса на пчелната общност. </p>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4 col-md-6">
+                <div class="cover text-center">
+                    <img class="w-125" src="Image/honey.png" alt="">
+                    <h2 class="fs-3 fw-bolder mt-4">Хигиенни пакети</h2>
+                    <p>Съчетайте качеството на нашия мед със стандарти за хигиена и безопасност чрез нашите специални хигиенни пакети, които осигуряват дълготрайна свежест и автентичен вкус на природата във вашия дом. </p>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4 col-md-6">
+                <div class="cover text-center">
+                    <img class="w-125" src="Image/delivery.png" alt="">
+                    <h2 class="fs-3 fw-bolder mt-4">Бърза доставка</h2>
+                    <p>С нашата бърза и надеждна доставка, свежият мед от нашата пчеларска ферма ще достигне до вас в най-кратки срокове, за да се насладите на неговия неповторим вкус.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ##################### Our Products Starts Here #################### -->
+<div class="container-fluid products big-padding px-3 bg-honey">
+    <div class="container-xl">
+        <div class="section-title row">
+            <h2 class="fs-1 fw-bold">Нашите продукти</h2>
+            <p>Нашите продукти са обогатени с непоколебима грижа и внимание към детайлите, за да ви предложим най-високо качество нашия натурален мед и пчелни продукти.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 mb-4">
+                <a href="Product-1.html">
+                    <div class="product bg-white p-4 text-center shadow-md">
+                        <img class="product-image" src="Image/jar-proba-4.png" alt="">
+                        <div class="d-inline-block">
+                            <h4 class="fw-bolder fs-5 mt-4">Мед от Манука</h4>
+                            <span class="fw-bolder fs-4">14 лв.</span>
+                        </div>
+                        <div class="d-inline-block mt-3">
+                            <button class="btn btn-primary px-5">Купи веднага</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 mb-4">
+                <a href="Product-2.html">
+                    <div class="product bg-white p-4 text-center shadow-md">
+                        <img class="product-image" src="Image/jar-proba-2.png" alt="">
+                        <div class="d-inline-block">
+                            <h4 class="fw-bolder fs-5 mt-4">Суров мед</h4>
+                            <span class="fw-bolder fs-4">12 лв.</span> <span class="text-muted text-decoration-line-through">16 лв.</span>
+                        </div>
+                        <div class="d-inline-block mt-3">
+                            <button class="btn btn-primary px-5">Купи веднага</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 mb-4">
+                <a href="Product-3.html">
+                    <div class="product bg-white p-4 text-center shadow-md">
+                        <img class="product-image" src="Image/jar-proba-3.png" alt="">
+                        <div class="d-inline-block">
+                            <h4 class="fw-bolder fs-5 mt-4">Мед от диви билки</h4>
+                            <span class="fw-bolder fs-4">16 лв.</span> <span class="text-muted text-decoration-line-through">18 лв.</span>
+                        </div>
+                        <div class="d-inline-block mt-3">
+                            <button class="btn btn-primary px-5">Купи веднага</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 mb-4">
+                <a href="Product-4.html">
+                    <div class="product bg-white p-4 text-center shadow-md">
+                        <img class="product-image" src="Image/jar-proba-1.png" alt="">
+                        <div class="d-inline-block">
+                            <h4 class="fw-bolder fs-5 mt-4">Пчелен мед</h4>
+                            <span class="fw-bolder fs-4">12 лв.</span> <span class="text-muted text-decoration-line-through">14 лв.</span>
+                        </div>
+                        <div class="d-inline-block mt-3">
+                            <button class="btn btn-primary px-5">Купи веднага</button>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ******************** About US Starts Here ******************* -->
+
+<div class="about-us big-padding">
+    <div class="container-lg">
+        <div class="section-title">
+            <p>Помогнете ни да постигнем нашата цел</p>
+            <h2>За нас</h2>
+        </div>
+        <div class="about-row row">
+            <div class="col-md-7">
+                <div class="abut-detail fs-6">
+
+                    <p class="mb-3">Добре дошли в нашия свят на пчеларството и натуралните продукти! Ние сме предана семейна фирма, обичаща и отдадена на идеята за здравословен начин на живот. С пристрастие и грижа към пчелите и природата, ние създаваме висококачествени пчелни продукти, включително чист и вкусен мед, богат на ползотворни свойства.</p>
+                    <p class="mb-3">Нашата мисия е да предоставяме на клиентите ни не само вкусни и натурални продукти, но и усещане за връзка с природата и подкрепа към устойчиви пчеларски практики. Вярваме, че качеството на продуктите ни е в тясна връзка с уважението към пчелите и околната среда.</p>
+                    <p class="mb-4">С вашата подкрепа ние се стремим към постигане на нашата цел - да бъдем предпочитана марка за натурални пчелни продукти, които придават енергия и благосъстояние. Помогнете ни да разширим пчеларската си дейност и да споделим удоволствието от здравословно и вкусно хранене с още повече хора. Благодарим ви, че сте с нас в този път към по-добро здраве и природно благосъстояние!</p>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-5">
+                <img src="Image/about%20us-1.jpeg" width="85%" height="100%" style="border-radius: 10px" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="testimonial" class="service bg-honey container-fluid px-4 py-5">
+    <div class="container">
+
+
+        <div class="section-title row mb-3">
+            <h2 class="fw-bolder">Коментари</h2>
+            <p>Споделете вашите впечатления тук</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="serv-cove shadow-md rounded bg-white p-3">
+                    <div class="prf row mb-3">
+                        <div class="col-3">
+                            <img class="rounded-pill" src="Image/user-man.png" alt="">
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h6 class="mb-0 fw-bolder">Йоан Йорданов</h6>
+                            <span>Пчелар</span>
+                        </div>
+                    </div>
+                    <div class="det text-center">
+                        <p class="fs-7 fst-italic">Ненадминати, всичко при тях е на най-високо ниво, те са екип които с удолствие бих нарекъл колеги. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="serv-cove shadow-md rounded bg-white p-3">
+                    <div class="prf row mb-3">
+                        <div class="col-3">
+                            <img class="rounded-pill" src="Image/user-woman.png" alt="">
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h6 class="mb-0 fw-bolder">Емилия Иванова</h6>
+                            <span>Мениджър реклама</span>
+                        </div>
+                    </div>
+                    <div class="det text-center">
+                        <p class="fs-7 fst-italic">Редовно си купувам всемъзможни пчелни продукти и с всеки път съм все по-доволна.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="serv-cove shadow-md rounded bg-white p-3">
+                    <div class="prf row mb-3">
+                        <div class="col-3">
+                            <img class="rounded-pill" src="Image/user-man.png" alt="">
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h6 class="mb-0 fw-bolder">Петър Енчев</h6>
+                            <span>Програмист</span>
+                        </div>
+                    </div>
+                    <div class="det text-center">
+                        <p class="fs-7 fst-italic">Мога да кажа само професионализъм на нечувано ниво.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--########################## Blog Starts Here ############################# -->
+
+<div id="blog" class="service container-fluid px-4 bg-white py-5">
+    <div class="container">
+        <div class="section-title row mb-3">
+            <h2 class="fw-bolder">Блог</h2>
+            <p>Добре дошли в уютния свят на нашия блог, където се гледа на света на здравословното хранене и благополучието чрез вълнуващи статии.</p>
+        </div>
+        <div class="row mt-5">
+        <div class="card-list">
+            <article class="card-home">
+                <figure class="card-image">
+                    <img src="Image/honey-blog.jpg" alt="blog" />
+                </figure>
+                <div class="card-header">
+                    <a href="Blog-1.html">Ползите от меда</a>
+                    <button class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                            <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="card-footer">
+                    <div class="card-meta card-meta--views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="EyeOpen">
+                            <path d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        872
+                    </div>
+                    <div class="card-meta card-meta--date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Calendar">
+                            <rect x="2" y="4" width="20" height="18" rx="4" />
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <path d="M2 10h20" />
+                        </svg>
+                        November 10, 2023
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+        <div class="card-list">
+            <article class="card-home">
+                <figure class="card-image">
+                    <img src="Image/honey-blog%20(2).jpg" alt="blog" />
+                </figure>
+                <div class="card-header">
+                    <a href="Blog-2.html">Видовете мед</a>
+                    <button class="icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                            <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="card-footer">
+                    <div class="card-meta card-meta--views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="EyeOpen">
+                            <path d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        1 533
+                    </div>
+                    <div class="card-meta card-meta--date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Calendar">
+                            <rect x="2" y="4" width="20" height="18" rx="4" />
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <path d="M2 10h20" />
+                        </svg>
+                        November 12, 2023
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+
+            <div class="card-list">
+                <article class="card-home">
+                    <figure class="card-image">
+                        <img src="Image/honey-blog%20(3).jpg" alt="blog" />
+                    </figure>
+                    <div class="card-header">
+                        <a href="Blog-3.html">Меда в кулинарията</a>
+                        <button class="icon-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                            </svg>
+
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-meta card-meta--views">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="EyeOpen">
+                                <path d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            2 633
+                        </div>
+                        <div class="card-meta card-meta--date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Calendar">
+                                <rect x="2" y="4" width="20" height="18" rx="4" />
+                                <path d="M8 2v4" />
+                                <path d="M16 2v4" />
+                                <path d="M2 10h20" />
+                            </svg>
+                            November 16, 2023
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+<footer>
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 foot-about">
+                    <h4>За нас</h4>
+
+                    <p>Ние сме фирма за продажба на мед и пчелни продукти. Ние сме синоним на качество, отговорност и добро отношение. </p>
+
+                    <ul>
+                        <li>гр. Благоевград 2700, жк Ален Мак ул. „Борис Ангелушев“</li>
+                        <li>******@abv.bg</li>
+                        <li>089 134 5678</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 foot-post">
+                    <h4>Последни статии</h4>
+
+                    <div class="post-row">
+                        <div class="image">
+                            <img  src="Image/blog-2.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <p>Професията пчелар</p>
+                        </div>
+                    </div>
+
+                    <div class="post-row">
+                        <div class="image">
+                            <img src="Image/blog-3.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <p>Меда - ползи</p>
+                        </div>
+                    </div>
+
+                    <div class="post-row">
+                        <div class="image">
+                            <img src="Image/block-4.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <p>Оборудването на един пчелар</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 foot-services">
+                    <h4>Other</h4>
+
+                    <ul>
+                        <li><a href="">Privacy police</a></li>
+                        <li><a href="">Our Services</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 foot-news">
+                    <h4>Новини</h4>
+                    <p>Очаквайте нови изненади от нас.</p>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control mb-0" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-primary" id="basic-addon2"><i class="bi text-white bi-send"></i></span>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy">
+    <div class="container">
+        <a href="index.html">2023 &copy; All Rights Reserved | Designed and Developed by Kadir</a>
+    </div>
+</div>
+
+</body>
+<script src="Script/Bee%20animation.js"></script>
+<script src="Script/Script.js"></script>
+</html>
