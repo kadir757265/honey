@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="Style/Style.css">
     <link rel="stylesheet" href="Style/Navbar.css">
+    <link rel="stylesheet" href="Style/Rent.css">
     <link rel="stylesheet" href="Style/Bee%20animation.css">
     <link rel="stylesheet" href="Style/Home.css">
     <link rel="stylesheet" href="Style/All.css">
@@ -63,6 +64,19 @@
         <li class="menu__item" style="--x: 72; --y: 72;"><a class="menu__link" href="Contact.html">Контакти</a></li>
     </ul>
 </nav>
+
+<div class="page-nav no-margin row" >
+    <div class="container">
+        <div class="row">
+            <h2 class="text-start">Продукти</h2>
+            <ul>
+                <li> <a href="index.html"><i class="bi bi-house-door"></i>Начало</a></li>
+                <li><a href="Product.html"><i class="bi bi-chevron-double-right pe-2"></i>Продукти</a></li>
+                <li><i class="bi bi-chevron-double-right pe-2"></i>Осинови кошер</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <style>
     @media (max-width: 768px) {
 
@@ -72,57 +86,18 @@
         header {
             display: none;
         }
+
+
     }
 </style>
 
 
 <style>
-    .title-box {
-        font-weight: 600;
-        font-size: 50px;
-       text-align: center;
-        color: #ffa300;
-    }
-    .container {
-        margin-top:5rem;
-        max-width:90%;
-    }
     .menu {
         display: none;
     }
-
-    .home-image-bee {
-        width: 60%;
-        height: auto;
-        position: relative;
-        top: 40px;
-        left: 140px;
-        transform: scaleX(-1);
-    }
-    .scene {
-        position: absolute;
-        top: -100px;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .carousel-inner {
-        position: relative;
-        z-index: 1;
-    }
-
-    .carousel-caption {
-        z-index: 3;
-    }
     @media (max-width: 768px) {
-        .w-100 {
-            height: 280px;!important;
-        }
+
         .menu {
             display: block;
         }
@@ -135,309 +110,289 @@
 
 
 
-<div class="container mx-auto px-20">
 
-    <div style='background-color:rgb(255, 255, 255)'>
-        <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" style="cursor: auto;">
-            <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex">
-                <div class="flex-1 px-6 py-8 bg-white lg:p-12" style="cursor: auto;">
-                    <h3 class="text-2xl font-extrabold text-amber-500 sm:text-3xl" style="cursor: auto;">Абонамент за кошер</h3>
-                    <p class="mt-6 text-base text-gray-500">Представлява уникален месечен абонамент, който позволява на участниците да осиновяват кошери с цел подкрепа за увеличаване на популацията на пчелите. С този иновативен подход ние поощряваме биологичното разнообразие и се подчертава важността на пчелите. </p>
-                    <div class="mt-8">
-                        <div class="flex items-center">
-                            <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-amber-600 uppercase bg-white">Какво получавате</h4>
-                            <div class="flex-1 border-t-2 border-amber-600"></div>
-                        </div>
-                        <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">1 буркан мед месечно</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Сертификат за подкрепа</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Дигитални книжки с рецепти</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Стикер за подкрепа</p>
-                            </li>
-
-                        </ul>
-                    </div>
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 ">
+    <div class="bg-white rounded-lg shadow-lg lg:flex">
+        <div class="flex-1 px-6 py-8 bg-white">
+            <h3 class="text-2xl font-extrabold text-amber-500 sm:text-3xl">Абонамент за кошер</h3>
+            <p class="mt-6 text-base text-gray-500">Представлява уникален месечен абонамент, който позволява на участниците да осиновяват кошери с цел подкрепа за увеличаване на популацията на пчелите. С този иновативен подход ние поощряваме биологичното разнообразие и се подчертава важността на пчелите. </p>
+            <div class="mt-8">
+                <div class="flex items-center">
+                    <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-amber-600 uppercase bg-white">Какво получавате</h4>
+                    <div class="flex-1 border-t-2 border-amber-600"></div>
                 </div>
-                <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12" style="cursor: auto;">
-                    <p class="mt-4 text-gray-500" style="text-decoration-line:line-through;text-decoration-style:solid">12 лв. / месец</p>
-                    <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
-                        <span>10 лв.</span>
-                        <span class="ml-3 text-xl font-medium text-gray-500">/ месец</span>
-                    </div>
-                    <div class="mt-6">
-                        <div class="rounded-md shadow">
-                            <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
+                <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
-                    </div>
-
-                    </div>
+                        <p class="ml-3 text-sm text-gray-700">1 буркан мед месечно</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Сертификат за подкрепа</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Дигитални книжки с рецепти</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Стикер за подкрепа</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+            <p class="mt-4 text-gray-500 line-through">14 лв. / месец</p>
+            <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
+                <span>10 лв.</span>
+                <span class="ml-3 text-xl font-medium text-gray-500">/ месец</span>
+            </div>
+            <div class="mt-6">
+                <div class="rounded-md shadow">
+                    <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container mx-auto px-20">
 
-    <div style='background-color:rgb(255, 255, 255)'>
-        <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" style="cursor: auto;">
-            <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex">
-                <div class="flex-1 px-6 py-8 bg-white lg:p-12" style="cursor: auto;">
-                    <h3 class="text-2xl font-extrabold text-amber-500 sm:text-3xl" style="cursor: auto;">Подкрепи кошера</h3>
-                    <p class="mt-6 text-base text-gray-500">Представлява уникален месечен абонамент, който позволява на участниците да осиновяват кошери с цел подкрепа за увеличаване на популацията на пчелите. С този иновативен подход ние поощряваме биологичното разнообразие и се подчертава важността на пчелите. </p>
-                    <div class="mt-8">
-                        <div class="flex items-center">
-                            <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-amber-600 uppercase bg-white">Какво получавате</h4>
-                            <div class="flex-1 border-t-2 border-amber-600"></div>
-                        </div>
-                        <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">3 буркана мед месечно</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Сертификат за подкрепа</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Дигитални книжки с рецепти</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Стикер за подкрепа</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Бъркалка за мед</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Книга</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Посещение на кошера</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Име на кошера</p>
-                            </li>
-
-                        </ul>
-                    </div>
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-lg shadow-lg lg:flex">
+        <div class="flex-1 px-6 py-8 bg-white">
+            <h3 class="text-2xl font-extrabold text-amber-500 sm:text-3xl">Подкрепи кошер</h3>
+            <p class="mt-6 text-base text-gray-500">Представлява уникален месечен абонамент, който позволява на участниците да осиновяват кошери с цел подкрепа за увеличаване на популацията на пчелите. С този иновативен подход ние поощряваме биологичното разнообразие и се подчертава важността на пчелите. </p>
+            <div class="mt-8">
+                <div class="flex items-center">
+                    <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-amber-600 uppercase bg-white">Какво получавате</h4>
+                    <div class="flex-1 border-t-2 border-amber-600"></div>
                 </div>
-                <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12" style="cursor: auto;">
-                    <p class="mt-4 text-gray-500" style="text-decoration-line:line-through;text-decoration-style:solid">20 лв. / месец</p>
-                    <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
-                        <span>18 лв.</span>
-                        <span class="ml-3 text-xl font-medium text-gray-500">/ месец</span>
-                    </div>
-                    <div class="mt-6">
-                        <div class="rounded-md shadow">
-                            <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
+                <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
-                    </div>
-
+                        <p class="ml-3 text-sm text-gray-700">3 буркана мед месечно</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Сертификат за подкрепа</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Дигитални книжки с рецепти</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Стикер за подкрепа</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Бъркалка за мед</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Книга</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Посещение на кошера</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Име на кошера</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+            <p class="mt-4 text-gray-500 line-through">25 лв. / месец</p>
+            <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
+                <span>22 лв.</span>
+                <span class="ml-3 text-xl font-medium text-gray-500">/ месец</span>
+            </div>
+            <div class="mt-6">
+                <div class="rounded-md shadow">
+                    <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
 
 
-<div class="container mx-auto px-20">
 
-    <div style='background-color:rgb(255, 255, 255)'>
-        <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" style="cursor: auto;">
-            <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex">
-                <div class="flex-1 px-6 py-8 bg-white lg:p-12" style="cursor: auto;">
-                    <h3 class="text-2xl font-extrabold text-amber-500 sm:text-3xl" style="cursor: auto;">Осинови кошер</h3>
-                    <p class="mt-6 text-base text-gray-500">Представлява уникален месечен абонамент, който позволява на участниците да осиновяват кошери с цел подкрепа за увеличаване на популацията на пчелите. С този иновативен подход ние поощряваме биологичното разнообразие и се подчертава важността на пчелите. </p>
-                    <div class="mt-8">
-                        <div class="flex items-center">
-                            <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-amber-600 uppercase bg-white">Какво получавате</h4>
-                            <div class="flex-1 border-t-2 border-amber-600"></div>
-                        </div>
-                        <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">8 буркана мед месечно</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Сертификат за подкрепа</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Дигитални книжки с рецепти</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Стикер за подкрепа</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Бъркалка за мед</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Книга</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Посещение на кошера</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Име на кошера</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Персонализилани етикети</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Чай от наши спонсори</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Платнена торба</p>
-                            </li>
-                            <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
-                                    <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <p class="ml-3 text-sm text-gray-700">Брандиран кошер</p>
-                            </li>
-
-                        </ul>
-                    </div>
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-lg shadow-lg lg:flex">
+        <div class="flex-1 px-6 py-8 bg-white">
+            <h3 class="text-2xl font-extrabold text-amber-500 sm:text-3xl">Осинови кошер</h3>
+            <p class="mt-6 text-base text-gray-500">Представлява уникален месечен абонамент, който позволява на участниците да осиновяват кошери с цел подкрепа за увеличаване на популацията на пчелите. С този иновативен подход ние поощряваме биологичното разнообразие и се подчертава важността на пчелите. </p>
+            <div class="mt-8">
+                <div class="flex items-center">
+                    <h4 class="flex-shrink-0 pr-4 text-sm font-semibold tracking-wider text-amber-600 uppercase bg-white">Какво получавате</h4>
+                    <div class="flex-1 border-t-2 border-amber-600"></div>
                 </div>
-                <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12" style="cursor: auto;">
-                    <p class="mt-4 text-gray-500" style="text-decoration-line:line-through;text-decoration-style:solid">40 лв. / месец</p>
-                    <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
-                        <span>35 лв.</span>
-                        <span class="ml-3 text-xl font-medium text-gray-500">/ месец</span>
-                    </div>
-                    <div class="mt-6">
-                        <div class="rounded-md shadow">
-                            <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
+                <ul class="mt-8 space-y-5 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-5">
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
-                    </div>
+                        <p class="ml-3 text-sm text-gray-700">8 буркана мед месечно</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Сертификат за подкрепа</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Дигитални книжки с рецепти</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Стикер за подкрепа</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Бъркалка за мед</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Книга</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Посещение на кошера</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Име на кошера</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Персонализилани етикети</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Чай от наши спонсори</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Платнена торба</p>
+                    </li>
+                    <li class="flex items-start lg:col-span-1">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="ml-3 text-sm text-gray-700">Брандиран кошер</p>
+                    </li>
 
+                </ul>
+            </div>
+        </div>
+        <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+            <p class="mt-4 text-gray-500 line-through">40 лв. / месец</p>
+            <div class="flex items-center justify-center mt-4 text-5xl font-extrabold text-gray-900">
+                <span>35 лв.</span>
+                <span class="ml-3 text-xl font-medium text-gray-500">/ месец</span>
+            </div>
+            <div class="mt-6">
+                <div class="rounded-md shadow">
+                    <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
 
 <br>
 <br>
@@ -448,24 +403,22 @@
 
 
     <div style='background-color:rgb(255, 255, 255)'>
+        <div class="box">
         <h1 class="title-box">Как помагате и какво получавате?</h1>
-
+        </div>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 pt-20 pb-10 lg:pt-40 lg:pb-20" style="cursor: auto;">
 
             <div class="p-6 bg-gray-100 rounded-lg">
 
                 <div class="mb-5">
 
-                    <img class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                    </img>
+                   <img class="image-box" src="Image/apitherapy.png">
 
                 </div>
 
                 <h3 class="text-lg font-bold mb-2">
                     1. Вкусен мед
                 </h3>
-
                 <p class="text-sm leading-6 text-gray-600">
                     Подарете на Вас и Вашето семейство здраве в бурканче. Вашите пчелички ще произведат вкусен и качествен мед, който ще пристига при вас всеки месец
                 </p>
@@ -476,9 +429,9 @@
 
                 <div class="mb-5">
 
-                    <svg class="hi-outline hi-cube inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                    </svg>
+                    <div class="mb-5">
+                        <img class="image-box" src="Image/bee-hive.png">
+                    </div>
 
                 </div>
 
@@ -496,10 +449,7 @@
 
                 <div class="mb-5" style="cursor: auto;">
 
-                    <svg class="hi-outline hi-cog inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
+                    <img class="image-box" src="Image/bee-queen.png">
 
                 </div>
 
@@ -517,9 +467,11 @@
 
                 <div class="mb-5">
 
-                    <svg class="hi-outline hi-sparkles inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                    </svg>
+                    <div class="mb-5" style="cursor: auto;">
+
+                        <img class="image-box" src="Image/data-analyst.png">
+
+                    </div>
 
                 </div>
 
@@ -537,9 +489,11 @@
 
                 <div class="mb-5">
 
-                    <svg class="hi-outline hi-sparkles inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                    </svg>
+                    <div class="mb-5" style="cursor: auto;">
+
+                        <img class="image-box" src="Image/honey-bee.png">
+
+                    </div>
 
                 </div>
 
@@ -557,9 +511,11 @@
 
                 <div class="mb-5">
 
-                    <svg class="hi-outline hi-sparkles inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                    </svg>
+                    <div class="mb-5" style="cursor: auto;">
+
+                        <img class="image-box" src="Image/information.png">
+
+                    </div>
 
                 </div>
 
@@ -573,6 +529,49 @@
 
             </div>
 
+            <div class="p-6 bg-gray-100 rounded-lg">
+
+                <div class="mb-5">
+
+                    <div class="mb-5" style="cursor: auto;">
+
+                        <img class="image-box" src="Image/happy.png">
+
+                    </div>
+
+                </div>
+
+                <h3 class="text-lg font-bold mb-2">
+                   7. Опазване на пчелите от изчезване
+                </h3>
+
+                <p class="text-sm leading-6 text-gray-600">
+                    С избирането на една от нашите програми вие помагате да запазим био разнообразието и популацията на пчелите, с което ие автомантично помагате за опазване на Земята, което е един от най-големите проблеми в днешния свят.
+                </p>
+
+            </div>
+
+            <div class="p-6 bg-gray-100 rounded-lg">
+
+                <div class="mb-5">
+
+                    <div class="mb-5" style="cursor: auto;">
+
+                        <img class="image-box" src="Image/vip-card.png">
+
+                    </div>
+
+                </div>
+
+                <h3 class="text-lg font-bold mb-2">
+                   8. Специално отношение
+                </h3>
+
+                <p class="text-sm leading-6 text-gray-600">
+                    С нашите абонаменти вие автоматично получавате нашето специално отношение, за което ще разберете когато се включите в програмата.
+                </p>
+
+            </div>
         </div>
     </div>
 </div>
@@ -663,3 +662,4 @@
 
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
+</html>
