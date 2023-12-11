@@ -489,6 +489,11 @@ progress {
         font-size: 3rem;
     }
 }
+@media (max-width: 768px) {
+    main {
+        height: auto;
+    }
+}
 .display-6 {
     font-size: calc(1.375rem + 1.5vw);
     font-weight: 300;
@@ -616,8 +621,6 @@ progress {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
-    margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 .row > * {
     flex-shrink: 0;

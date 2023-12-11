@@ -22,11 +22,11 @@ main {
     -ms-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
 }
+
 section {
     align-items: center;
     display: flex;
     font-size: 3rem;
-    height: 100vh;
     justify-content: center;
     scroll-snap-align: center;
     width: 100vw;
