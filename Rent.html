@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body class="bg-white" oncontextmenu="return false;" onselectstart="return false">
+<body >
 <header>
     <div id="menu-jk" class="nav-part shadow-md bg-white navcol">
         <div class="container-lg">
@@ -110,6 +110,13 @@
 
 
 
+<div id="fancyModal" class="fancy-modal">
+    <span class="fancy-close" onclick="closeFancyModal()">&times;</span>
+    <div class="fancy-modal-content">
+        <img src="Image/Rent-image.png" class="modal-image">
+    </div>
+</div>
+
 
 <div class="container mx-auto px-4 sm:px-6 lg:px-8 ">
     <div class="bg-white rounded-lg shadow-lg lg:flex">
@@ -165,7 +172,7 @@
             </div>
             <div class="mt-6">
                 <div class="rounded-md shadow">
-                    <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
+                    <a onclick="openFancyModal()"  class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
                 </div>
             </div>
         </div>
@@ -259,7 +266,7 @@
             </div>
             <div class="mt-6">
                 <div class="rounded-md shadow">
-                    <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
+                    <a onclick="openFancyModal()" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
                 </div>
             </div>
         </div>
@@ -349,7 +356,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <p class="ml-3 text-sm text-gray-700">Персонализилани етикети</p>
+                        <p class="ml-3 text-sm text-gray-700">Персонализирани етикети</p>
                     </li>
                     <li class="flex items-start lg:col-span-1">
                         <div class="flex-shrink-0">
@@ -387,7 +394,7 @@
             </div>
             <div class="mt-6">
                 <div class="rounded-md shadow">
-                    <a href="https://stackdiary.com/" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
+                    <a onclick="openFancyModal()" class="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-amber-500 border border-transparent rounded-md hover:bg-amber-600" target="_blank">Купи</a>
                 </div>
             </div>
         </div>
@@ -662,4 +669,5 @@
 
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
+<script type="text/javascript" src="Script/Rent.js"></script>
 </html>
