@@ -633,10 +633,10 @@ progress {
 }
 @media (max-width: 768px){
     .mb-4 {
-        width: 80%;
+        width: 90%;
         height: 80%;
         position: relative;
-        left: 30px;
+        left: 20px;
 
     }
 }
@@ -7260,6 +7260,7 @@ fieldset:disabled .btn {
     background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 .bg-white {
+    border-radius: 5px;
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
