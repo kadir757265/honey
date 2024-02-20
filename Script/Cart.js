@@ -282,4 +282,24 @@ document.addEventListener("DOMContentLoaded", function () {
         addToCart(productName, productPrice, productImage);
         cart.style.right = '0';
     });
+
+    // Продукт 17
+    var cart17Image = document.getElementById('cart17');
+    cart17Image.addEventListener('click', function () {
+        var productName = 'Малък кошер<br>';
+        var productPrice = 50.00;
+        var productImage = 'Image/bee-small-box.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 17
+    var cart18Image = document.getElementById('cart18');
+    cart18Image.addEventListener('click', function () {
+        var productName = 'Голям кошер<br>';
+        var productPrice = 150.00;
+        var productImage = 'Image/bee-box.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
 });
