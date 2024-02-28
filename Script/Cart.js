@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cart.style.right = '0';
     });
 
-    // Продукт 17
+// Продукт 18
     var cart18Image = document.getElementById('cart18');
     cart18Image.addEventListener('click', function () {
         var productName = 'Голям кошер<br>';
@@ -302,4 +302,106 @@ document.addEventListener("DOMContentLoaded", function () {
         addToCart(productName, productPrice, productImage);
         cart.style.right = '0';
     });
+
+    // Продукт 19
+    var cart19Image = document.getElementById('cart19');
+    cart19Image.addEventListener('click', function () {
+        var productName = 'Манов Мед<br>';
+        var productPrice = 16.00;
+        var productImage = 'Image/jar-proba-13.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 20
+    var cart20Image = document.getElementById('cart20');
+    cart20Image.addEventListener('click', function () {
+        var productName = 'Мед от магарешки бодил<br>';
+        var productPrice = 14.00;
+        var productImage = 'Image/jar-proba-14.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 21
+    var cart21Image = document.getElementById('cart21');
+    cart21Image.addEventListener('click', function () {
+        var productName = 'Слънчогледов Мед<br>';
+        var productPrice = 19.00;
+        var productImage = 'Image/jar-proba-15.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 22
+    var cart22Image = document.getElementById('cart22');
+    cart22Image.addEventListener('click', function () {
+        var productName = 'Мед от люцерна<br>';
+        var productPrice = 13.00;
+        var productImage = 'Image/jar-proba-16.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+
+    // Продукт 23
+    var cart23Image = document.getElementById('cart23');
+    cart23Image.addEventListener('click', function () {
+        var productName = 'Майски Мед<br>';
+        var productPrice = 15.00;
+        var productImage = 'Image/jar-proba-21.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 24
+    var cart24Image = document.getElementById('cart24');
+    cart24Image.addEventListener('click', function () {
+        var productName = 'Ментов Мед<br>';
+        var productPrice = 17.00;
+        var productImage = 'Image/jar-proba-17.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 25
+    var cart25Image = document.getElementById('cart25');
+    cart25Image.addEventListener('click', function () {
+        var productName = 'Плодов Мед<br>';
+        var productPrice = 13.00;
+        var productImage = 'Image/jar-proba-18.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 26
+    var cart26Image = document.getElementById('cart26');
+    cart26Image.addEventListener('click', function () {
+        var productName = 'Детелинов Мед<br>';
+        var productPrice = 15.00;
+        var productImage = 'Image/jar-proba-19.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 27
+    var cart27Image = document.getElementById('cart27');
+    cart27Image.addEventListener('click', function () {
+        var productName = 'Полски Мед<br>';
+        var productPrice = 19.00;
+        var productImage = 'Image/jar-proba-20.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
+
+    // Продукт 28
+    var cart28Image = document.getElementById('cart28');
+    cart28Image.addEventListener('click', function () {
+        var productName = 'Крем<br>';
+        var productPrice = 10.00;
+        var productImage = 'Image/product-cream-proba-3.png';
+        addToCart(productName, productPrice, productImage);
+        cart.style.right = '0';
+    });
 });
+
