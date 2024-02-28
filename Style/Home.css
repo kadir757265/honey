@@ -154,6 +154,7 @@ img {
     }
 
     #menu-jk {
+        display: none;
         padding: 10px;
     }
 
